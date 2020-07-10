@@ -7,6 +7,7 @@ Install the dependencies and devDependencies and start the server.
 
 Simple Alert
 ```sh
+// types : success , danger, info
 var alert = new Notify({message, type, autoClose});
 alert.present();
 ```
@@ -20,7 +21,7 @@ var config = {
                     text:"OK",
                     cssClass:'btn btn-sm btn-primary',
                     action:function(){
-                        let alert = DJ.Notify("Deleting data...",'loading');
+                        let alert = new Notify("Deleting data...",'loading');
                         <!-- Do Ajax or Some other Code-->
                     }
                 }
